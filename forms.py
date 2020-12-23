@@ -1,9 +1,9 @@
 from flask_wtf import FlaskForm
-from wtforms import SelectField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SubmitField
 
 class AddForm(FlaskForm):
 
-    name = SelectField('Name of Puppy: ')
+    name = StringField('Name of Puppy: ')
     submit = SubmitField('Add Puppy')
 
 class DelForm(FlaskForm):
